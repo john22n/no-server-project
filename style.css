@@ -1,0 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*  END OF CSS RESET -------------------------=-=-=--=-=-*/
+body {
+
+    background-color: #383721;
+}
+
+.navbar-inverse {
+    background-color: black !important;
+    border-color: black !important;
+}
+
+form {
+    display: inline;
+}
+
+.navbar-nav {
+    float: none !important;
+}
+
+.navbar-nav > li > a {
+    padding-top: 30px !important;
+    padding-left: 15px !important;
+}
+
+.form-inline {
+    float: right;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+#browse {
+    color: #ffd529;;
+}
+
+#kids {
+    color: white !important;
+}
+
+.container {
+    min-height: calc(100vh - 200px);
+}
+
+/*footer styling------------------------------------=-=-=*/
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 125px;
+    background-color: black;
+}
+
+footer, a {
+    color: yellow !important;
+
+}
+
+a {
+    display: inline;
+}
+
+.flex {
+    display: flex;
+
+}
+
+.icons {
+    padding-top: 10px;
+    align-self: center;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    color: #ffd529;
+!important;
+
+}
+
+.words {
+    padding-top: 10px;
+    align-self: center;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    color: #ffd529;
+!important;
+
+}
+
+.john {
+    color: white;
+    padding-top: 10px;
+    align-self: center;
+    width: 40px;
+    height: 30px;
+    margin: auto;
+}
+
+/*.list {*/
+/*display:flex;*/
+/*flex-direction:row;*/
+/*justify-content: flex-end;*/
+/*//padding: 0px 20px 0px 20px;*/
+
+/*}*/
+
+/*homeView page/-----------------------------*/
+
+.netTube {
+    background-color: #141414;
+}
+
+.container {
+    background-color: #141414;
+}
+
+#recent-trailers {
+    color: #ffd529;
+}
+
+#search-results {
+    color: #ffd529;
+}
+
+#title {
+    font-size: 11px;
+    color: #ffd529;
+}
+
+.form-control {
+    background-color: #fffe91 !important;
+}
+
+input.form-control.ng-pristine.ng-untouched.ng-valid.ng-empty {
+    text-align: center;
+}
+
+.hamburger {
+    display: none;
+}
+
+/*video view page----------------------------*/
+.videoView {
+    min-height: calc(100vh - 200px);
+}
+
+.btnC {
+
+    width: 250px;
+    margin: 0 auto 100px auto;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 768px) {
+    .parent-ham {
+        display: inline;
+    }
+
+    .hamburger {
+        display: inline;
+        position: absolute;
+        top: 10px;
+        right: 5px;
+
+    }
+
+    .nav {
+        display: none;
+    }
+}
+
+/*@media screen and (min-width: 414px) {*/
+/**/
+/*}*/

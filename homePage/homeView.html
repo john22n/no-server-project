@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row row-home">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div class="Search-box-container">
+                <!--<div class="input-group stylish-input-group">-->
+                <form ng-submit="search(query)">
+                    <input type="text" class="form-control" ng-model="query" placeholder="Search Youtube">
+                </form>
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+    <br/>
+    <h4 id="search-results">Search Results</h4>
+    <div class="row">
+        <div class="col-sm-2" ng-repeat="video in searchResults" ui-sref="play({videoId: video.id.videoId})">
+            <img ng-src="{{ video.snippet.thumbnails.high.url }}" alt="" width="175px" height="100px">
+            <span id="title">{{video.snippet.title}}</span>
+        </div>
+    </div>
+    <br/>
+    <h4 id="recent-trailers">Recent Movie Trailers</h4>
+
+    <div class="row" id="defaultVideos">
+        <div class="col-md-2" ng-repeat="default in defaultVideos" ui-sref="play({videoId: default.id})">
+            <img ng-src="{{  default.image  }}" alt="" width="175px" height="100px">
+            <span id="title">{{ default.title}}</span>
+        </div>
+    </div>
+</div>
+<br/>

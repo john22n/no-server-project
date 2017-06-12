@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row row-home">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div class="Search-box-container">
+                <!--<div class="input-group stylish-input-group">-->
+                <form ng-submit="search(query)">
+                    <input type="text" class="form-control" ng-model="query" placeholder="Search Youtube">
+                </form>
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+    <br/>
+    <h4 id="search-results">Search Results</h4>
+    <div class="row">
+        <div class="col-sm-2" ng-repeat="videos in searchResults" ui-sref="play({videoId: videos.id})">
+            <img ng-src="{{ videos.image }}" alt="" width="100%" height="auto">
+            <span id="title">{{videos.title}}</span>
+        </div>
+    </div>
+    <br/>
+</div>
